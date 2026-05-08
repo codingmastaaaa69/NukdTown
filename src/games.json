@@ -1,0 +1,23 @@
+[
+  {
+    "id": "mayor-plaza",
+    "title": "MAYOR'S PLAZA",
+    "description": "The town square is buzzing... new games appearing soon.",
+    "url": "about:blank",
+    "thumbnail": "https://placehold.co/400x300/4caf50/ffffff?text=VILLAGE"
+  },
+  {
+    "id": "cozy-cottage",
+    "title": "COZY COTTAGE",
+    "description": "A quiet place to relax and play... stay tuned for decryption.",
+    "url": "about:blank",
+    "thumbnail": "https://placehold.co/400x300/ff69b4/ffffff?text=COTTAGE"
+  },
+  {
+    "id": "secret-garden",
+    "title": "SECRET GARDEN",
+    "description": "Wait... what's growing in the backyard? New games coming!",
+    "url": "about:blank",
+    "thumbnail": "https://placehold.co/400x300/87ceeb/ffffff?text=GARDEN"
+  }
+]
