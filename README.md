@@ -1,6 +1,6 @@
 # pepsican 🏡
 
-An 8-bit cozy town-themed unblocked games portal.
+An 8-bit cozy town-themed unblocked portal.
 
 ## 🚀 How to fix the "Blank Page" on GitHub Pages
 

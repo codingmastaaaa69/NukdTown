@@ -256,7 +256,7 @@ export default function App() {
             <h4 className="font-pixel text-[10px] text-earth glow-text uppercase underline decoration-2 underline-offset-4 mb-4">TOWN_HALL</h4>
             <p className="text-xs font-bold">
               PEPSICAN IS A COZY CORNER OF THE UNBLOCKED INTERNET. 
-              WE BELIEVE IN GOOD VIBES AND GREAT GAMES.
+              WE BELIEVE IN GOOD VIBES AND GREAT ADVENTURES.
             </p>
             <div className="flex gap-4">
               <Bird className="w-6 h-6 hover:text-retro-pink cursor-pointer animate-float" />

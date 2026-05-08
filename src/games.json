@@ -2,36 +2,37 @@
   {
     "id": "cookie-clicker",
     "title": "COOKIE CLICKER",
-    "description": "The masterpiece of idle games. Bake cookies to rule the universe!",
-    "url": "https://www.crazygames.com/embed/cookie-clicker",
-    "thumbnail": "https://images.crazygames.com/cookie-clicker.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+    "description": "The masterpiece of idle clicking. Bake cookies to rule the universe!",
+    "url": "https://orteil.dashnet.org/cookieclicker/",
+    "thumbnail": "https://orteil.dashnet.org/cookieclicker/img/perfectCookie.png"
   },
   {
     "id": "tunnel-rush",
     "title": "TUNNEL RUSH",
     "description": "Fast-paced adrenaline trip through colorful tunnels. Don't crash!",
-    "url": "https://www.crazygames.com/embed/tunnel-rush",
-    "thumbnail": "https://images.crazygames.com/tunnel-rush.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+    "url": "https://6x76dx.github.io/tunnel-rush/",
+    "thumbnail": "https://placehold.co/600x400/222/fff?text=TUNNEL+RUSH"
   },
   {
     "id": "slope",
     "title": "SLOPE",
     "description": "Speed down a neon hill, avoiding blocks and staying on the edge.",
-    "url": "https://www.crazygames.com/embed/slope",
-    "thumbnail": "https://images.crazygames.com/slope.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+    "url": "https://slopeio.github.io/",
+    "thumbnail": "https://placehold.co/600x400/000/0f0?text=SLOPE"
   },
   {
     "id": "basket-random",
     "title": "BASKET RANDOM",
     "description": "One-button basketball mayhem with random physics and players.",
-    "url": "https://www.crazygames.com/embed/basket-random",
-    "thumbnail": "https://images.crazygames.com/basket-random.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+    "url": "https://basketrandom.github.io/",
+    "thumbnail": "https://placehold.co/600x400/ff8c00/fff?text=BASKET+RANDOM"
   },
   {
     "id": "house-of-hazards",
     "title": "HOUSE OF HAZARDS",
     "description": "Complete daily tasks while your friends set up traps around the house!",
-    "url": "https://www.crazygames.com/embed/house-of-hazards",
-    "thumbnail": "https://images.crazygames.com/house-of-hazards.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+    "url": "https://houseofhazards.com/",
+    "thumbnail": "https://placehold.co/600x400/e91e63/fff?text=HAZARDS"
   }
 ]
+
