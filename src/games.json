@@ -1,5 +1,12 @@
 [
   {
+    "id": "basketball-stars",
+    "title": "BASKETBALL STARS",
+    "description": "Show off your skills on the court! Play solo or against friends.",
+    "url": "https://www.crazygames.com/embed/basketball-stars-2019",
+    "thumbnail": "https://images.crazygames.com/basketballstars.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+  },
+  {
     "id": "mayor-plaza",
     "title": "MAYOR'S PLAZA",
     "description": "The town square is buzzing... new games appearing soon.",
@@ -9,14 +16,14 @@
   {
     "id": "cozy-cottage",
     "title": "COZY COTTAGE",
-    "description": "A quiet place to relax and play... stay tuned for decryption.",
+    "description": "A quiet place to relax and play... stay tuned.",
     "url": "about:blank",
     "thumbnail": "https://placehold.co/400x300/ff69b4/ffffff?text=COTTAGE"
   },
   {
     "id": "secret-garden",
     "title": "SECRET GARDEN",
-    "description": "Wait... what's growing in the backyard? New games coming!",
+    "description": "Wait... what's growing in the backyard?",
     "url": "about:blank",
     "thumbnail": "https://placehold.co/400x300/87ceeb/ffffff?text=GARDEN"
   }
