@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": "cookie-clicker",
+    "title": "COOKIE CLICKER",
+    "description": "The masterpiece of idle games. Bake cookies to rule the universe!",
+    "url": "https://www.crazygames.com/embed/cookie-clicker",
+    "thumbnail": "https://images.crazygames.com/cookie-clicker.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+  },
+  {
+    "id": "tunnel-rush",
+    "title": "TUNNEL RUSH",
+    "description": "Fast-paced adrenaline trip through colorful tunnels. Don't crash!",
+    "url": "https://www.crazygames.com/embed/tunnel-rush",
+    "thumbnail": "https://images.crazygames.com/tunnel-rush.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+  },
+  {
+    "id": "slope",
+    "title": "SLOPE",
+    "description": "Speed down a neon hill, avoiding blocks and staying on the edge.",
+    "url": "https://www.crazygames.com/embed/slope",
+    "thumbnail": "https://images.crazygames.com/slope.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+  },
+  {
+    "id": "basket-random",
+    "title": "BASKET RANDOM",
+    "description": "One-button basketball mayhem with random physics and players.",
+    "url": "https://www.crazygames.com/embed/basket-random",
+    "thumbnail": "https://images.crazygames.com/basket-random.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+  },
+  {
+    "id": "house-of-hazards",
+    "title": "HOUSE OF HAZARDS",
+    "description": "Complete daily tasks while your friends set up traps around the house!",
+    "url": "https://www.crazygames.com/embed/house-of-hazards",
+    "thumbnail": "https://images.crazygames.com/house-of-hazards.png?auto=format,compress&q=75&cs=strip&auto=format&w=600"
+  }
+]
