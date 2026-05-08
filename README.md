@@ -1,4 +1,4 @@
-# GetNukd Town 🏡
+# pepsican Town 🏡
 
 An 8-bit cozy town-themed unblocked games portal.
 

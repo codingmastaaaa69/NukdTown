@@ -47,8 +47,8 @@ export default function App() {
       {/* Marquee Header */}
       <div className="marquee border-b-2 border-earth">
         <div className="marquee-content">
-          WELCOME TO GETNUKD TOWN - THE COZIEST SPOT ON THE WEB - NEW VILLAGERS ARRIVING DAILY - FISHING TOURNEY STARTS SOON! - SYSTEM STATUS: RADIANTLY HAPPY - 
-          WELCOME TO GETNUKD TOWN - THE COZIEST SPOT ON THE WEB - NEW VILLAGERS ARRIVING DAILY - FISHING TOURNEY STARTS SOON! - SYSTEM STATUS: RADIANTLY HAPPY - 
+          WELCOME TO PEPSICAN TOWN - THE COZIEST SPOT ON THE WEB - NEW VILLAGERS ARRIVING DAILY - FISHING TOURNEY STARTS SOON! - SYSTEM STATUS: RADIANTLY HAPPY - 
+          WELCOME TO PEPSICAN TOWN - THE COZIEST SPOT ON THE WEB - NEW VILLAGERS ARRIVING DAILY - FISHING TOURNEY STARTS SOON! - SYSTEM STATUS: RADIANTLY HAPPY - 
         </div>
       </div>
 
@@ -61,7 +61,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-5xl md:text-7xl font-pixel text-earth glow-text mb-2 tracking-tighter">
-                GETNUKD
+                WELCOME
               </h1>
               <div className="flex gap-2">
                 <span className="bg-earth text-white px-2 py-0.5 text-[8px] font-pixel">V3.0 TOWN_EDITION</span>
@@ -255,7 +255,7 @@ export default function App() {
           <div className="space-y-4">
             <h4 className="font-pixel text-[10px] text-earth glow-text uppercase underline decoration-2 underline-offset-4 mb-4">TOWN_HALL</h4>
             <p className="text-xs font-bold">
-              GETNUKD TOWN IS A COZY CORNER OF THE UNBLOCKED INTERNET. 
+              PEPSICAN TOWN IS A COZY CORNER OF THE UNBLOCKED INTERNET. 
               WE BELIEVE IN GOOD VIBES AND GREAT GAMES.
             </p>
             <div className="flex gap-4">
@@ -278,7 +278,7 @@ export default function App() {
           <div className="space-y-4">
             <h4 className="font-pixel text-[10px] text-earth uppercase underline decoration-2 underline-offset-4 mb-4">WEATHER_STATION</h4>
             <div className="bg-white/50 p-2 border-2 border-earth text-[10px] font-mono whitespace-pre text-earth shadow-[2px_2px_0px_#8b4513]">
-              {`CURRENT WEATHER: SUNNY\nTEMP: 24°C / 75°F\nLUCK: EXTREMELY HIGH\n(C) 2004 GETNUKD TOWN\nEST. 8-BIT COZY VIBES`}
+              {`CURRENT WEATHER: SUNNY\nTEMP: 24°C / 75°F\nLUCK: EXTREMELY HIGH\n(C) 2004 PEPSICAN TOWN\nEST. 8-BIT COZY VIBES`}
             </div>
           </div>
         </div>
