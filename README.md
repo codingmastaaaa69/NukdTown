@@ -1,4 +1,4 @@
-# pepsican Town 🏡
+# pepsican 🏡
 
 An 8-bit cozy town-themed unblocked games portal.
 
