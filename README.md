@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# GetNukd Town 🏡
 
-# Run and deploy your AI Studio app
+An 8-bit cozy town-themed unblocked games portal.
 
-This contains everything you need to run your app locally.
+## 🚀 How to deploy to GitHub Pages
 
-View your app in AI Studio: https://ai.studio/apps/ef3d2ad6-69b0-4232-a0f5-4cbf3558b349
+If your GitHub page is blank, it's likely because you are serving the source files instead of the built application. Follow these steps:
 
-## Run Locally
+1. **Build the project**: Run `npm run build` in your terminal. This will create a `dist/` folder.
+2. **Deploy the `dist` folder**: 
+   - **Option A (Manual)**: Upload the contents of the `dist/` folder (not the folder itself) to your repository's `main` branch or a `gh-pages` branch.
+   - **Option B (GitHub Actions)**: Use a GitHub Action to automatically build and deploy the `dist` folder on every push.
+   - **Option C (Simple)**: If you use the GitHub Desktop app, copy the contents of `dist/` to your root directory before pushing (but be careful not to overwrite your source code).
 
-**Prerequisites:**  Node.js
+### ⚠️ Important Note
+The `index.html` in the root of this project is for **development** only. The `index.html` generated inside the `dist/` folder after running `npm run build` is what actually works on GitHub Pages!
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🏠 Features
+- 8-bit aesthetic (Tomodachi / Animal Crossing vibes)
+- Responsive house-grid layout
+- Games stored in `src/games.json`
+- Fullscreen mode support
