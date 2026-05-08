@@ -48,17 +48,29 @@
   }
 
   .house-body {
-    @apply w-full bg-white border-4 border-earth rounded-t-sm relative transition-all duration-200 group-hover:scale-105;
+    @apply w-full bg-white border-4 border-earth rounded-t-sm relative transition-all duration-200 group-hover:scale-105 group-hover:-translate-y-1;
     box-shadow: 6px 6px 0px rgba(139, 69, 19, 0.2);
   }
 
   .house-roof {
-    @apply absolute -top-6 left-0 w-full h-10 bg-retro-pink border-t-4 border-l-4 border-r-4 border-earth;
+    @apply absolute -top-8 left-0 w-full h-10 bg-retro-pink border-t-4 border-l-4 border-r-4 border-earth z-10;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   }
 
+  .house-chimney {
+    @apply absolute -top-8 right-4 w-3 h-6 bg-earth border-2 border-earth/20 z-0;
+  }
+
+  .house-window {
+    @apply absolute top-4 left-2 w-4 h-4 bg-sky border-2 border-earth/30 rounded-sm;
+  }
+
+  .house-window-right {
+    @apply absolute top-4 right-2 w-4 h-4 bg-sky border-2 border-earth/30 rounded-sm;
+  }
+
   .house-door {
-    @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-10 bg-earth border-2 border-earth/20 rounded-t-lg;
+    @apply absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-10 bg-earth border-2 border-earth/20 rounded-t-lg z-20;
   }
 
   .grass-lot {

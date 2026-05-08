@@ -2,18 +2,45 @@
 
 An 8-bit cozy town-themed unblocked games portal.
 
-## 🚀 How to deploy to GitHub Pages
+## 🚀 How to fix the "Blank Page" on GitHub Pages
 
-If your GitHub page is blank, it's likely because you are serving the source files instead of the built application. Follow these steps:
+If your GitHub page is blank, it's because **GitHub Pages does not know how to run TypeScript/React code directly**. You must transform it into standard JavaScript using the "Build" command.
 
-1. **Build the project**: Run `npm run build` in your terminal. This will create a `dist/` folder.
-2. **Deploy the `dist` folder**: 
-   - **Option A (Manual)**: Upload the contents of the `dist/` folder (not the folder itself) to your repository's `main` branch or a `gh-pages` branch.
-   - **Option B (GitHub Actions)**: Use a GitHub Action to automatically build and deploy the `dist` folder on every push.
-   - **Option C (Simple)**: If you use the GitHub Desktop app, copy the contents of `dist/` to your root directory before pushing (but be careful not to overwrite your source code).
+### 1. Run the Build Command
+In your terminal, run:
+```bash
+npm run build
+```
+This will create a new folder called `dist`.
 
-### ⚠️ Important Note
-The `index.html` in the root of this project is for **development** only. The `index.html` generated inside the `dist/` folder after running `npm run build` is what actually works on GitHub Pages!
+### 2. Move files to root (The "Simple" Way)
+If you want to just push files and have them work:
+1. Delete everything in your repository except the `.git` folder (locally).
+2. Copy **everything inside** the `dist` folder and paste it into your repository root.
+3. Push to GitHub.
+
+### 3. The Professional Way (GitHub Actions)
+Create a file at `.github/workflows/deploy.yml` with this content:
+```yaml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [main]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+```
 
 ## 🏠 Features
 - 8-bit aesthetic (Tomodachi / Animal Crossing vibes)

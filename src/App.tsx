@@ -126,9 +126,13 @@ export default function App() {
                   >
                     {/* The House */}
                     <div className="house-body">
+                      <div className="house-chimney" />
                       <div className="house-roof" style={{ backgroundColor: ['#ff69b4', '#87ceeb', '#f0e68c', '#7cfc00'][idx % 4] }} />
                       
-                      <div className="aspect-video bg-sky/30 m-2 overflow-hidden border-2 border-earth relative">
+                      <div className="house-window" />
+                      <div className="house-window-right" />
+                      
+                      <div className="aspect-video bg-sky/30 m-2 overflow-hidden border-2 border-earth relative z-10">
                         <img 
                           src={game.thumbnail} 
                           alt={game.title} 
