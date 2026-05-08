@@ -45,5 +45,5 @@ jobs:
 ## 🏠 Features
 - 8-bit aesthetic (Tomodachi / Animal Crossing vibes)
 - Responsive house-grid layout
-- Games stored in `src/games.json`
+- Activities stored in `src/activities.json`
 - Fullscreen mode support

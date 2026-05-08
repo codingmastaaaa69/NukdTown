@@ -6,9 +6,9 @@
 import { useState, useEffect } from 'react';
 import { Radio, Home, Zap, Shield, Search, X, Maximize2, ExternalLink, Gamepad2, Trees, Cloud, Sun, Flower, Bird } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import gamesData from './games.json';
+import activitiesData from './activities.json';
 
-interface Game {
+interface Activity {
   id: string;
   title: string;
   description: string;
@@ -17,18 +17,18 @@ interface Game {
 }
 
 export default function App() {
-  const [games, setGames] = useState<Game[]>([]);
-  const [selectedGame, setSelectedGame] = useState<Game | null>(null);
+  const [activities, setActivities] = useState<Activity[]>([]);
+  const [selectedActivity, setSelectedActivity] = useState<Activity | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
-    setGames(gamesData);
+    setActivities(activitiesData);
   }, []);
 
-  const filteredGames = games.filter(game => 
-    game.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    game.description.toLowerCase().includes(searchQuery.toLowerCase())
+  const filteredActivities = activities.filter(activity => 
+    activity.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    activity.description.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -106,23 +106,23 @@ export default function App() {
       </nav>
 
       <main className="flex-grow max-w-6xl mx-auto w-full p-4 md:p-8">
-        {!selectedGame ? (
+        {!selectedActivity ? (
           <div className="space-y-12">
             <div className="flex items-center gap-2 border-b-4 border-earth/20 pb-2">
               <Home className="w-5 h-5 text-retro-pink" />
               <h2 className="font-pixel text-earth text-[10px] uppercase">LOCAL_NEIGHBORHOOD: RESIDENTIAL_ZONE</h2>
             </div>
-
+ 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16 pt-8">
-              {filteredGames.length > 0 ? (
-                filteredGames.map((game, idx) => (
+              {filteredActivities.length > 0 ? (
+                filteredActivities.map((activity, idx) => (
                   <motion.div 
-                    key={game.id}
+                    key={activity.id}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: idx * 0.05 }}
                     className="house-card group cursor-pointer"
-                    onClick={() => setSelectedGame(game)}
+                    onClick={() => setSelectedActivity(activity)}
                   >
                     {/* The House */}
                     <div className="house-body">
@@ -134,23 +134,23 @@ export default function App() {
                       
                       <div className="aspect-video bg-sky/30 m-2 overflow-hidden border-2 border-earth relative z-10">
                         <img 
-                          src={game.thumbnail} 
-                          alt={game.title} 
+                          src={activity.thumbnail} 
+                          alt={activity.title} 
                           className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                           referrerPolicy="no-referrer"
                         />
                         <div className="absolute inset-0 bg-retro-blue/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                       </div>
-
+ 
                       <div className="p-3 bg-white/80 space-y-1 border-t-2 border-earth/10 h-24">
                         <h3 className="font-pixel text-[10px] text-earth uppercase leading-tight group-hover:text-retro-pink transition-colors">
-                          {game.title}
+                          {activity.title}
                         </h3>
                         <p className="font-mono text-xs text-earth/70 line-clamp-2 leading-none">
-                          {game.description}
+                          {activity.description}
                         </p>
                       </div>
-
+ 
                       <div className="house-door" />
                     </div>
                     
@@ -172,7 +172,7 @@ export default function App() {
             </div>
           </div>
         ) : (
-          /* Game Player */
+          /* Activity Player */
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -182,7 +182,7 @@ export default function App() {
               <div className="flex items-center gap-3">
                 <button 
                   onClick={() => {
-                    setSelectedGame(null);
+                    setSelectedActivity(null);
                     setIsFullscreen(false);
                   }}
                   className="bg-white border-2 border-earth p-1 hover:bg-retro-pink hover:text-white transition-colors"
@@ -190,11 +190,11 @@ export default function App() {
                   <X className="w-4 h-4" />
                 </button>
                 <div className="flex flex-col">
-                  <h2 className="font-pixel text-earth text-[10px] uppercase tracking-wider">{selectedGame.title}</h2>
-                  <p className="font-mono text-[10px] text-earth/60">ADDRESS: {selectedGame.id.toUpperCase()} TOWN_DRIVE</p>
+                  <h2 className="font-pixel text-earth text-[10px] uppercase tracking-wider">{selectedActivity.title}</h2>
+                  <p className="font-mono text-[10px] text-earth/60">ADDRESS: {selectedActivity.id.toUpperCase()} TOWN_DRIVE</p>
                 </div>
               </div>
-
+ 
               <div className="flex gap-2">
                 <button 
                   onClick={() => setIsFullscreen(!isFullscreen)}
@@ -203,7 +203,7 @@ export default function App() {
                   <Maximize2 className="w-3 h-3" /> FULLSCREEN
                 </button>
                 <a 
-                  href={selectedGame.url} 
+                  href={selectedActivity.url} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-white border-2 border-earth p-1 hover:bg-retro-yellow hover:text-white transition-colors flex items-center gap-1 font-pixel text-[8px]"
@@ -212,21 +212,21 @@ export default function App() {
                 </a>
               </div>
             </div>
-
+ 
             <div className={`bg-black relative ${isFullscreen ? 'h-full' : 'aspect-video border-8 border-earth shadow-[8px_8px_0px_#8b4513]'}`}>
               <iframe 
-                src={selectedGame.url} 
+                src={selectedActivity.url} 
                 className="w-full h-full border-none"
-                title={selectedGame.title}
+                title={selectedActivity.title}
                 allowFullScreen
               />
             </div>
-
+ 
             {!isFullscreen && (
               <div className="p-4 bg-white/80 border-4 border-earth space-y-4 shadow-[4px_4px_0px_#8b4513]">
                 <div>
                   <h3 className="font-pixel text-retro-pink text-[10px] mb-2 uppercase italic underline">TOWN_GOSSIP:</h3>
-                  <p className="font-mono text-earth text-xl leading-snug">{selectedGame.description}</p>
+                  <p className="font-mono text-earth text-xl leading-snug">{selectedActivity.description}</p>
                 </div>
                 <div className="flex gap-4">
                   <div className="flex items-center gap-1 text-[8px] font-pixel text-retro-blue">
